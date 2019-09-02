@@ -1,4 +1,12 @@
 <!DOCTYPE html>
 <html>
     <h1>This is the todo view</h1>
+    <!-- <ul>
+        <li> temp item A</li>
+        <li> temp item B</li>
+    </ul> -->
+    <ul>
+        {% for todo_item in all_items %}
+        <li>{{ todo_item.content }}
+    </ul>
 </html>
